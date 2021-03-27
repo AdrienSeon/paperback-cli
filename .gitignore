@@ -2,7 +2,9 @@
 *-error.log
 /.nyc_output
 /dist
-/lib
+# /lib
 /tmp
 /yarn.lock
 node_modules
+node_modules.nosync
+coverage

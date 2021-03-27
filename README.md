@@ -19,7 +19,7 @@ $ npm install -g paperback-cli
 $ paperback COMMAND
 running command...
 $ paperback (-v|--version|version)
-paperback-cli/1.3.3 darwin-x64 node-v15.3.0
+paperback-cli/1.3.3 darwin-x64 node-v14.15.4
 $ paperback --help [COMMAND]
 USAGE
   $ paperback COMMAND
@@ -39,8 +39,9 @@ USAGE
   $ paperback bundle
 
 OPTIONS
-  -h, --help       show CLI help
-  --folder=folder  Subfolder to output to
+  -h, --help                         show CLI help
+  --folder=folder                    Subfolder to output to
+  --sourceslocation=sourceslocation  Subfolder where sources are located
 ```
 
 _See code: [src/commands/bundle.ts](https://github.com/FaizanDurrani/paperback-cli/blob/v1.3.3/src/commands/bundle.ts)_
@@ -69,6 +70,7 @@ USAGE
 OPTIONS
   -h, --help       show CLI help
   -p, --port=port  [default: 8080]
+  --nobundle       Prevent bundling when launching serve. Will use existing bundle. Make sure that it's present.
 ```
 
 _See code: [src/commands/serve.ts](https://github.com/FaizanDurrani/paperback-cli/blob/v1.3.3/src/commands/serve.ts)_
